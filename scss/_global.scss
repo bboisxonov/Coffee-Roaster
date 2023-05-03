@@ -8,6 +8,13 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a, ul, img{
+    text-decoration: none;
+    list-style: none;
+    user-select: none;
 }
 
 :root{
