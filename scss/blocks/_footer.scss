@@ -1,0 +1,33 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+    &-list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-link{
+        line-height: 19px;
+        font-weight: var(--font-weight-700);
+        text-align: center;
+        letter-spacing: 1px;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: var(--text-color-primary);
+        padding: 7px 20px;
+        transition: .2s ease-in-out;
+    }
+    &-link:hover{
+        opacity: .6;
+    }
+    &-logo__box{
+        display: flex;
+        justify-content: space-between;
+        width: 140px;
+    }
+}
+.site-footer{
+    background-color: #F1D3AF;
+}

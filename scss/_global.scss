@@ -3,7 +3,7 @@
 }
 .container{
     max-width: 1440px;
-    margin: 10px auto;
+    margin: 0 auto;
     padding: 0;
 }
 body{
@@ -15,4 +15,7 @@ body{
     --font-weight-400: 400;
     --font-weight-500: 500;
     --font-weight-700: 700;
+    --text-color-primary: #333333;
+    --text-color-white: #fff;
+    ;
 }
