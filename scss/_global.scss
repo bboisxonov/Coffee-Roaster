@@ -1,0 +1,18 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1440px;
+    margin: 10px auto;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --primary-color: #0A775F;
+    --font-weight-400: 400;
+    --font-weight-500: 500;
+    --font-weight-700: 700;
+}
