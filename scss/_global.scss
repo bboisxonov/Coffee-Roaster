@@ -1,21 +1,6 @@
 *,*::after,*::before{
     box-sizing: border-box;
 }
-.container{
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0;
-}
-body{
-    font-family: 'Roboto', sans-serif;
-    scroll-behavior: smooth;
-}
-
-a, ul, img{
-    text-decoration: none;
-    list-style: none;
-    user-select: none;
-}
 
 :root{
     --primary-color: #0a775f;
@@ -24,5 +9,36 @@ a, ul, img{
     --font-weight-700: 700;
     --text-color-primary: #333333;
     --text-color-white: #fff;
-    ;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body, html, h1, h2, h3, h4, h5, h6, p, div, span{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.button{
+    width: fit-content;
+    color: var(--text-color-white);
+    background-color: var(--primary-color);
+    border-radius: 100px;
+    padding: 16px 24px;
+    transition: all .2s ease-in-out;
+}
+
+.button:hover{
+    background-color: #075947;
+}
+
+a, ul, img{
+    text-decoration: none;
+    list-style: none;
+    user-select: none;
 }
