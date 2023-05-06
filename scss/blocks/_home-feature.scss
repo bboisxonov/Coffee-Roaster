@@ -1,0 +1,96 @@
+.feature{
+    position: relative;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+
+    &-title{
+        margin-top: 0;
+        margin-bottom: 140px !important;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 59px;
+        text-align: center;
+        color: #FFFFFF;
+
+    }
+    &-card__box{
+        padding: 50px 0;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        display: flex;
+
+    }
+    &-card{
+        position: relative;
+        width: 433px;
+        height: 396px;
+        background: #F8F8F2;
+        padding: 20px;
+
+        &__title{
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 47px;
+            width: 231px;
+            margin: 8px 0;
+            font-variant: all-small-caps;
+
+            color: var(--text-color-primary);
+        }
+        &__description{
+            margin: 0;
+            width: 385px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            color: var(--text-color-primary);
+        }
+        &__number{
+            font-family: 'Roboto';
+            font-size: 70px;
+            line-height: 75px;
+            font-variant: all-small-caps;
+
+            color: var(--text-color-primary);
+
+            opacity: 0.7;
+            margin: 0;
+            width: fit-content;
+            margin-left: auto;
+            margin-bottom: 12%;
+        }
+    }
+    &-card::before{
+        content: "";
+        position: absolute;
+        top: -20%;
+        left: 0;
+        width: 60px;
+        height: 60px;
+        background-color: #F8F8F2;
+        border: 4px solid #C99B67;
+    }
+    &-button{
+        background: #C99B67;
+        margin: 10px 0;
+    }
+    &-border{
+        width: 70%;
+        display: block;
+        border-top: 3px dashed #C99B67;
+        border-width: 5px;
+    }
+}
+
+.feature::after{
+    content: "";
+    background: url(/img/coffee-first-sticker.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 7%;
+    right: 5%;
+    width: 230px;
+    height: 200px;
+}
