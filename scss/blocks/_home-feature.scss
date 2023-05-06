@@ -12,6 +12,7 @@
         line-height: 59px;
         text-align: center;
         color: #FFFFFF;
+        text-transform: uppercase;
 
     }
     &-card__box{
@@ -24,7 +25,7 @@
     }
     &-card{
         position: relative;
-        width: 433px;
+        width: 33%;
         height: 396px;
         background: #F8F8F2;
         padding: 20px;
@@ -41,7 +42,7 @@
         }
         &__description{
             margin: 0;
-            width: 385px;
+            width: 100%;
             font-weight: 400;
             font-size: 18px;
             line-height: 28px;
@@ -74,7 +75,7 @@
     }
     &-button{
         background: #C99B67;
-        margin: 10px 0;
+        margin: 10px auto;
     }
     &-border{
         width: 70%;
