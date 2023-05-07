@@ -1,27 +1,27 @@
-.hero{
+.about_hero{
     background-color: #F1D3AF;
 
-    &_wrapper{
+    &--wrapper{
         display: flex;
         justify-content: space-between;
         padding-top: 100px;
     }
 
-    &_content{
+    &--content{
         display: flex;
         flex-direction: column;
         width: 32%;
         margin-left: 100px;
     }
 
-    &_title{
-        font-weight: var(--font-weight-700);  
+    &--title{
+        font-weight: var(--font-weight-700);
         font-size: 64px;
         line-height: 75px;
         color: #000000;
     }
 
-    &_desc{
+    &--desc{
         font-weight: var(--font-weight-400);
         font-size: 16px;
         line-height: 24px;
@@ -29,16 +29,16 @@
         margin: 24px 0;
     }
 
-    &_img{
-        background: url(/img/hero-photo.png) no-repeat;
-        background-size: 100% 100%;
+    &--img{
+        background: url(/img/about-hero-img.png) no-repeat;
+        background-size: cover;
         width: 50%;
         height: 664px;
         margin-top: -100px;
         position: relative;
     }
 
-    &_img::after{
+    &--img::after{
         content: "";
         position: absolute;
         top: -15%;
@@ -49,4 +49,3 @@
         height: 200px;
     }
 }
-
