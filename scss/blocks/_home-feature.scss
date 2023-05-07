@@ -34,7 +34,7 @@
             font-weight: 500;
             font-size: 40px;
             line-height: 47px;
-            width: 231px;
+            width: 100%;
             margin: 8px 0;
             font-variant: all-small-caps;
 
@@ -75,13 +75,20 @@
     }
     &-button{
         background: #C99B67;
-        margin: 10px auto;
+        margin: 0 auto;
+        border: 2px solid transparent;
+    }
+    &-button:hover{
+        color: #C99B67;
+        background-color: #fff;
+        border: 2px solid #C99B67;
     }
     &-border{
         width: 70%;
         display: block;
         border-top: 3px dashed #C99B67;
         border-width: 5px;
+        
     }
 }
 
