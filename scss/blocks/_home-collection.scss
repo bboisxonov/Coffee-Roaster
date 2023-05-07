@@ -1,6 +1,7 @@
 .collection{
     background-color: #F3F3E8;
     margin: 20px;
+    position: relative;
 
     &_title{
         font-weight: var(--font-weight-700);
@@ -25,6 +26,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        width: 100%;
 
         &--wrapper{
             width: 100%;
@@ -36,7 +38,7 @@
         }
 
         &--title{
-            font-weight: var(--font-weight-700);
+            font-weight: var(--font-weight-500);
             font-size: 48px;
             line-height: 56px;
             font-variant: all-small-caps;
@@ -57,3 +59,41 @@
         flex-direction: row-reverse;
     }
 }
+
+.collection::after{
+    content: "";
+    background: url(/img/leaves-left-1.png) no-repeat;
+    width: 231px;
+    height: 259px;
+    position: absolute;
+    left: 0;
+    top: 2%;
+    transform: translateX(-20px);
+}
+
+.collection::before{
+    content: "";
+    background: url(/img/leaves-right-mix.png);
+    width: 199px;
+    height: 398px;
+    position: absolute;
+    right: 0;
+    top: 39%;
+    z-index: 10;
+    transform: translateX(20px);
+}
+
+.collection_item::before{
+    content: "";
+    background: url(/img/leave-left-2.png) no-repeat;
+    width: 130px;
+    height: 275px;
+    position: absolute;
+    right: 0;
+    top: 73%;
+    left: 0;
+    z-index: 10;
+    transform: translateX(-20px);
+}
+
+
