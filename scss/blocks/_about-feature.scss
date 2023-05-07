@@ -1,0 +1,63 @@
+.about__feature::after, .about__feature::before{
+    display: none;
+}
+
+.about__feature-card::before, .about__feature::after{
+    display: none;
+}
+
+.about__feature{
+
+    &-title{
+        margin: 0;
+        margin-bottom: 30px !important;
+    }
+
+    &-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 40px;
+        position: relative;
+        &__title{
+            width: 33%;
+        }
+        &__description{
+            width: 40%;
+        
+        }
+        &__img1::after{
+            content: "";
+            background: url(/img/about-feature-card1.png) no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 12%;
+            right: 15%;
+            width: 120px;
+            height: 143px;
+    
+        }
+        &__img2::after{
+            content: "";
+            background: url(/img/about-feature-card2.png) no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 12%;
+            right: 15%;
+            width: 120px;
+            height: 143px;
+    
+        }
+        &__img3::after{
+            content: "";
+            background: url(/img/about-feature-card3.png) no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 12%;
+            right: 15%;
+            width: 120px;
+            height: 143px;
+    
+        }
+    }
+}
