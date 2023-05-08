@@ -1,22 +1,4 @@
-// "use strict"
-// const elPlanBlock = document.querySelector('.coffee_plan');
-// const elsPlanToggler = document.querySelectorAll('.coffee_plan--toggler');
-
-
-// // if (elsPlanToggler) {
-// //     elsPlanToggler.addEventListener('click', function () {
-// //         elPlanBlock.classList.toggle('coffee_plan--open')
-// //     })
-// // }
-
-// elsPlanToggler.forEach(function () {
-//     elsPlanToggler.addEventListener('click', function () {
-//         elPlanBlock.classList.toggle('coffee_plan--open')
-//     });
-// })
-
-
-
+"use strict"
 
 const elPlanBlock = document.querySelector('.coffee_plan');
 const elPlanToggler1 = document.querySelector('.plan-toggler1');
@@ -51,4 +33,23 @@ if (elPlanToggler5) {
         elPlanBlock.classList.toggle('coffee_plan--open5')
     })
 }
+// const elPlanBlock = document.querySelector('.coffee_plan');
+// const elsPlanToggler = document.querySelectorAll('.coffee_plan--toggler');
+
+
+// // if (elsPlanToggler) {
+// //     elsPlanToggler.addEventListener('click', function () {
+// //         elPlanBlock.classList.toggle('coffee_plan--open')
+// //     })
+// // }
+
+// elsPlanToggler.forEach(function () {
+//     elsPlanToggler.addEventListener('click', function () {
+//         elPlanBlock.classList.toggle('coffee_plan--open')
+//     });
+// })
+
+
+
+
 
