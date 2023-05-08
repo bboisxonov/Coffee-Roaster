@@ -27,12 +27,6 @@
         cursor: pointer;
     }
 
-    &--toggler{
-        background-color: inherit   ;
-        border: none;
-        margin: 10px 10px 0 10px;
-    }
-
     &--info_box{
         width: 47%;
         display: flex;
@@ -46,19 +40,33 @@
         justify-content: start;
     }
 
+    &--info_title_box:hover{
+        cursor: pointer;
+    }
+
     &--info_title{
         font-weight: var(--font-weight-700);
-        font-size: 40px;
+        font-size: 45px;
         line-height: 47px;
         font-variant: all-small-caps;
         color: #000000;
     }
 
+    &--toggler{
+        background-color: inherit   ;
+        border: none;
+        margin: 10px 45px 0 45px;
+    }
+
+    &--toggler{
+        cursor: pointer;
+    }
+
     &--card_box{
-        // display: flex;
-        // justify-content: space-between;
-        // align-items: center;
-        // margin: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5px 0 30px 0;
         display: none;
     }
 
@@ -71,14 +79,11 @@
     }
 
     &--card:hover{
-        background: #0A775F;    
+        background: #0A775F; 
+        cursor: pointer;   
     }
 
-    &--card:hover &--card_title{
-        color: #FFFFFF;
-    }
-
-    &--card:hover &--card_desc{
+    &--card:hover &--card_title, &--card:hover &--card_desc{
         color: #FFFFFF;
     }
 
@@ -98,7 +103,31 @@
         color: #333333;
     }
 
+    &--summary{
+        background: #C99B67;
+        margin-top: 100px;
+    }
 
+    &--summary_content{
+        padding: 40px 20px;
+    }
+
+    &--summary_title{
+        font-weight: var(--font-weight-400);
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: var(--text-color-white);
+    }
+
+    &--summary_desc{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 34px;
+        color: var(--text-color-white);
+        margin-top: 10px;
+    }
+    
 }
 
 .coffee_plan--open .coffee_plan--card_box{
@@ -108,10 +137,6 @@
     margin: 10px 0;
 }
 
-
-
-
-
 // .coffee_plan::after{
 //     content: "";
 //     background: url(/img/leaves-left-1.png) no-repeat;
@@ -119,8 +144,8 @@
 //     height: 281px;
 //     position: absolute;
 //     left: 0;
-//     top: 2%;
-//     transform: translateX(-20px);
+//     top: 35%;
+//     transform: translateX(-85px);
 // }
 
 // .coffee_plan::before{
@@ -130,17 +155,30 @@
 //     height: 398px;
 //     position: absolute;
 //     right: 0;
-//     top: 39%;
+//     top: 7%;
 //     z-index: 10;
 //     transform: translateX(20px);
 // }
 
-.current{
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 33px;
-    font-variant: all-small-caps;
-    color: #000000;
-    border-bottom: 3px dashed #C99B67;
-    padding-bottom: 5px;
-}
+// .coffee_plan--info_title_box::before{
+//     content: "";
+//     background: url(/img/leave-left-2.png) no-repeat;
+//     width: 130px;
+//     height: 275px;
+//     position: absolute;
+//     right: 0;
+//     top: 73%;
+//     left: 0;
+//     z-index: 10;
+//     transform: translateX(-85px);
+// }
+
+    // .current{
+    //     font-weight: 500;
+    //     font-size: 28px;
+    //     line-height: 33px;
+    //     font-variant: all-small-caps;
+    //     color: #000000;
+    //     border-bottom: 3px dashed #C99B67;
+    //     padding-bottom: 5px;
+    // }
