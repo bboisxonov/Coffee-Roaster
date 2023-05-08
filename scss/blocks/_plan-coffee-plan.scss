@@ -27,25 +27,20 @@
         cursor: pointer;
     }
 
-    &--toggler{
-        background-color: inherit   ;
-        border: none;
-        margin: 10px 10px 0 10px;
-    }
-
+    
     &--info_box{
         width: 47%;
         display: flex;
         flex-direction: column;
         margin-right: 100px;
     }
-
+    
     &--info_title_box{
         display: flex;
         align-items: center;
         justify-content: start;
     }
-
+    
     &--info_title{
         font-weight: var(--font-weight-700);
         font-size: 40px;
@@ -53,13 +48,23 @@
         font-variant: all-small-caps;
         color: #000000;
     }
-
+    
+    &--toggler{
+        background-color: inherit   ;
+        border: none;
+        margin: 10px 10px 0 10px;
+    }
+    &--toggler:hover{
+        cursor: pointer;
+    }
+    
     &--card_box{
-        // display: flex;
-        // justify-content: space-between;
-        // align-items: center;
-        // margin: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0;
         display: none;
+        
     }
 
     &--card{
@@ -101,12 +106,25 @@
 
 }
 
-.coffee_plan--open .coffee_plan--card_box{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px 0;
-}
+.coffee_plan--open1 .plan-card1{
+    display: flex !important;
+    // justify-content: space-between;
+    // align-items: center;
+    // margin: 10px 0;
+} 
+.coffee_plan--open2 .plan-card2{
+    display: flex !important;
+} 
+.coffee_plan--open3 .plan-card3{
+    display: flex !important;
+} 
+.coffee_plan--open4 .plan-card4{
+    display: flex !important;
+} 
+.coffee_plan--open5 .plan-card5{
+    display: flex !important;
+} 
+
 
 
 
