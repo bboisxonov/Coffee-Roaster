@@ -1,0 +1,146 @@
+.coffee_plan{
+    background-color: #F3F3E8;
+    margin: 20px;
+    position: relative;
+
+    &--wrapper{
+        display: flex;
+        justify-content: space-around;
+        padding: 50px 0;
+    }
+
+    &--title_box{
+        margin-right: auto;
+    }
+
+    &--title{
+        width: fit-content;
+        font-weight: var(--font-weight-500);
+        font-size: 28px;
+        line-height: 33px;
+        font-variant: all-small-caps;
+        color: #555555;
+        margin-bottom: 30px;
+    }
+
+    &--title:hover{
+        cursor: pointer;
+    }
+
+    &--toggler{
+        background-color: inherit   ;
+        border: none;
+        margin: 10px 10px 0 10px;
+    }
+
+    &--info_box{
+        width: 47%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 100px;
+    }
+
+    &--info_title_box{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    &--info_title{
+        font-weight: var(--font-weight-700);
+        font-size: 40px;
+        line-height: 47px;
+        font-variant: all-small-caps;
+        color: #000000;
+    }
+
+    &--card_box{
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+        // margin: 10px 0;
+        display: none;
+    }
+
+    &--card{
+        width: 31%;
+        height: 100%;
+        padding: 30px 12px 80px 16px;
+        background-color: #C5DBCF;
+        transition: all .2s ease-in-out;
+    }
+
+    &--card:hover{
+        background: #0A775F;    
+    }
+
+    &--card:hover &--card_title{
+        color: #FFFFFF;
+    }
+
+    &--card:hover &--card_desc{
+        color: #FFFFFF;
+    }
+
+    &--card_title{
+        font-weight: var(--font-weight-700);
+        font-size: 30px;
+        line-height: 28px;
+        font-variant: all-small-caps;
+        color: var(--text-color-primary);
+        margin: 10px 0;
+    }
+
+    &--card_desc{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        color: #333333;
+    }
+
+
+}
+
+.coffee_plan--open .coffee_plan--card_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+
+
+
+
+// .coffee_plan::after{
+//     content: "";
+//     background: url(/img/leaves-left-1.png) no-repeat;
+//     width: 231px;
+//     height: 281px;
+//     position: absolute;
+//     left: 0;
+//     top: 2%;
+//     transform: translateX(-20px);
+// }
+
+// .coffee_plan::before{
+//     content: "";
+//     background: url(/img/leaves-right-mix.png);
+//     width: 199px;
+//     height: 398px;
+//     position: absolute;
+//     right: 0;
+//     top: 39%;
+//     z-index: 10;
+//     transform: translateX(20px);
+// }
+
+.current{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    font-variant: all-small-caps;
+    color: #000000;
+    border-bottom: 3px dashed #C99B67;
+    padding-bottom: 5px;
+}
