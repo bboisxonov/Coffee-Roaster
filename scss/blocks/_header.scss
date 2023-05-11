@@ -9,7 +9,12 @@
     align-items: center;
     justify-content: space-between;
 
-    &_logo, &_list{
+    &_logo{
+        display: flex;
+        padding: 7px 20px;
+    }
+
+    &_list{
         display: flex;
     }
 
