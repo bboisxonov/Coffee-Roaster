@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url(/fonts/Roboto/Roboto-Regular.ttf);
+    src: url(/fonts/Roboto/Roboto-Regular.ttf);
+    src: url(/fonts/Roboto/Roboto-Bold.ttf);
+}
+
 *,*::after,*::before{
     box-sizing: border-box;
 }
@@ -49,21 +56,28 @@ a, ul, img{
     user-select: none;
 }
 
-@media only screen and (max-width: 1063px){
+@media only screen and (max-width: 1389px){
+    .button{
+        padding: 15px 23px;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 1092px){
     .button{
         padding: 13px 21px;
         font-size: 13px;
     }
 }
 
-@media only screen and (max-width: 876px){
+@media only screen and (max-width: 883px){
     .button{
         padding: 11px 19px;
         font-size: 11px;
     }
 }
 
-@media only screen and (max-width: 809px){
+@media only screen and (max-width: 845px){
     .hero{
        .button{
         padding: 9px 17px;

@@ -52,7 +52,7 @@
     }
 }
 
-@media only screen and (max-width: 1304px){
+@media only screen and (max-width: 1389px){
         .hero{
             &_content{
                 width: 33%;
@@ -77,7 +77,7 @@
         }
 }
 
-@media only screen and (max-width: 1223px){
+@media only screen and (max-width: 1263px){
     .hero{
         &_content{
             width: 34%;
@@ -102,7 +102,7 @@
     }
 }
 
-@media only screen and (max-width: 1127px){
+@media only screen and (max-width: 1165px){
     .hero{
         &_content{
             width: 35%;
@@ -123,7 +123,7 @@
     }
 }
 
-@media only screen and (max-width: 1063px){
+@media only screen and (max-width: 1092px){
     .hero{
         &_content{
             width: 37%;
@@ -148,7 +148,7 @@
     }
 }
 
-@media only screen and (max-width: 990px){
+@media only screen and (max-width: 995px){
     .hero{
         &_title{
             font-size: 47px;
@@ -157,10 +157,11 @@
     }
 }
 
-@media only screen and (max-width: 876px){
+@media only screen and (max-width: 883px){
     .hero{
         &_title{
             font-size: 45px;
+            line-height: 53px;
         }
 
         &_desc{
@@ -178,10 +179,11 @@
     }
 }
 
-@media only screen and (max-width: 809px){
+@media only screen and (max-width: 845px){
     .hero{
         &_title{
             font-size: 43px;
+            line-height: 51px;
         }
 
         &_desc{
@@ -200,6 +202,33 @@
         }
     }
 }
+
+@media only screen and (max-width: 807px){
+    .hero{
+        &_title{
+            font-size: 37px;
+            line-height: 49px;
+        }
+
+        &_desc{
+            font-size: 10px;
+            line-height: 15px;
+            margin: 13px 0;
+        }
+
+        &--img_box{
+            width: 43%;
+        }
+
+        &--img_box::after{
+            width: 130px;
+            height: 130px;
+        }
+    }
+}
+
+
+
 
 
 
