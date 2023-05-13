@@ -120,3 +120,12 @@
         }
     }
 }
+@media only screen and (max-width: 900px){
+    .promo{
+        height: 520px;
+        margin-bottom: 200px;
+        &-card__box{
+            top: 50%;
+        }
+    }
+}
