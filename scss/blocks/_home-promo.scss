@@ -170,3 +170,15 @@
         }
     }
 }
+
+@media only screen and (max-width: 690px){
+    .promo{
+        &-title{
+            font-size: 30px;
+        }
+        &-description{
+            line-height: 1.6;
+            width: 80%;
+        }
+    }
+}
