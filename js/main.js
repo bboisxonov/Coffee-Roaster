@@ -5,6 +5,16 @@ elsPlanToggler.forEach(function (elsPlanToggler) {
             })
         })
         
+const elSiteHeader = document.querySelector('.header');
+const elSiteToggler = document.querySelector('.header_toggler');
+
+if(elSiteToggler){
+        elSiteToggler.addEventListener('click', function(){
+                elSiteHeader.classList.toggle('header--open')
+        })
+}
+
+
         
         
         

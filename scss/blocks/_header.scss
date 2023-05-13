@@ -2,12 +2,19 @@
     padding-top: 45px;
     padding-bottom: 45px;
     background-color: #F1D3AF;
+    &_toggler{
+        display: none;
+    }
+}
+.header--open{
+    background-color: #F3D7B7;
 }
 
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 
     &_logo{
         display: flex;
@@ -32,4 +39,46 @@
     &_link:hover, &_link:active{
         opacity: .6;
     }
+    
+}
+
+@media only screen and (max-width: 780px) {
+
+    .navbar_list{
+        display: none;
+    }
+
+    .header--open .navbar_list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        background-color: #F3D7B7;
+        z-index: 999;
+        opacity: .97;
+        text-align: center;
+    }
+    .header_toggler{
+        margin-right: 3%;
+        background:  #F1D3AF;
+        border: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 40px;
+        height: 30px;
+        &--line{
+            width: 100%;
+            height: 11%;
+            background: #000;
+        }
+    }
+    .header--open .header_toggler{
+        background-color: #F3D7B7;
+    }
+    
 }
