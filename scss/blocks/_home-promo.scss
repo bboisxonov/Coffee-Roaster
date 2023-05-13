@@ -24,7 +24,7 @@
         font-weight: 400;
         mix-blend-mode: normal;
         opacity: 0.8;
-        width: 548px;
+        width: 38%;
     }
     &-card__box{
         display: flex;
@@ -49,6 +49,7 @@
             margin-top: 20px;
         }
         &__description{
+            width: 85%;
             font-weight: 400;
             font-size: 18px;
             line-height: 28px;
