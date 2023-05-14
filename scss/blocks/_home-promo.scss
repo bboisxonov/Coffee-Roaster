@@ -182,6 +182,7 @@
         &-card__box{
             display: flex;
             flex-direction: column;
+            align-items: start;
             justify-content: space-between;
             position: static;
             height: fit-content;
@@ -203,11 +204,11 @@
                 color: var(--text-color-white);
                 font-size: 27px;
                 margin-bottom: 10px;
-                text-align: center;
                 line-height: 1.2;
                 width: 100%;
             }
             &__description{
+                text-align: left;
                 width: 100%;
                 font-size: 15px;
                 color: var(--text-color-white);
@@ -255,7 +256,7 @@
         &-card{
             flex-direction: column;
             &__info{
-                width: 85%;
+                width: 80%;
             }
             &__title{
                 font-size: 27px;
