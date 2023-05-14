@@ -41,11 +41,14 @@
     }
     
 }
+.header--open{
+    z-index: 999;
+}
 
 @media only screen and (max-width: 780px) {
     .header{
         padding: 20px;
-        // padding-bottom: 35px;
+        position: relative;
     }
 
     .navbar_list{
@@ -58,8 +61,8 @@
         justify-content: space-around;
         position: absolute;
         top: 100%;
-        left: 0;
-        width: 100%;
+        left: -2.5%;
+        width: 105.2%;
         height: 200px;
         background-color: #F3D7B7;
         z-index: 999;
@@ -86,7 +89,72 @@
     }
     
 }
+@media only screen and (max-width: 750px) {
+    .header--open .navbar_list{
+        width: 105.4%;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .header--open .navbar_list{
+        width: 105.6%;
+    }
+}
 
+@media only screen and (max-width: 650px) {
+    .header--open .navbar_list{
+        width: 105.8%;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    .header--open .navbar_list{
+        width: 105.99%;
+    }
+}
+
+@media only screen and (max-width: 601px) {
+    .header--open .navbar_list{
+        width: 105.1%;
+        top: 98%;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .header--open .navbar_list{
+        width: 105.3%;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .header--open .navbar_list{
+        width: 105.5%;
+        top: 60%;
+    }
+}
+
+
+@media only screen and (max-width: 501px) {
+    .header--open .navbar_list{
+        width: 104.5%;
+    }
+}
+@media only screen and (max-width: 460px) {
+    .header--open .navbar_list{
+        width: 104.7%;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .header--open .navbar_list{
+        width: 104.99%;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .header--open .navbar_list{
+        width: 105.5%;
+    }
+}
 @media only screen and (max-width: 600px){
     .header{
         padding: 15px;
