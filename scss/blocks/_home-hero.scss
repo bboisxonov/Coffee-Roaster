@@ -4,7 +4,7 @@
     &_wrapper{
         display: flex;
         justify-content: space-between;
-        padding-top: 100px;
+        align-items: center;
     }
 
     &_content{
@@ -30,7 +30,7 @@
     }
 
     &--img_box{
-        margin-top: -7%;
+        // margin-top: -7%;
         position: relative;
         width: 50%;
         height: 100%;
@@ -130,7 +130,8 @@
         }
 
         &_title{
-            font-size: 53px;
+            font-size: 51px;
+            line-height: 55px;
         }
 
         &_desc{
@@ -151,8 +152,8 @@
 @media only screen and (max-width: 995px){
     .hero{
         &_title{
-            font-size: 47px;
-            line-height: 55px;
+            font-size: 45px;
+            line-height: 53px;
         }
     }
 }
@@ -161,34 +162,12 @@
     .hero{
         &_title{
             font-size: 45px;
-            line-height: 53px;
-        }
-
-        &_desc{
-            font-size: 12px;
-        }
-
-        &--img_box{
-            width: 44%;
-        }
-
-        &--img_box::after{
-            width: 150px;
-            height: 150px;
-        }
-    }
-}
-
-@media only screen and (max-width: 845px){
-    .hero{
-        &_title{
-            font-size: 43px;
-            line-height: 51px;
+            line-height: 50px;
         }
 
         &_desc{
             font-size: 11px;
-            line-height: 18px;
+            line-height: 19px;
             margin: 14px 0;
         }
 
@@ -203,15 +182,39 @@
     }
 }
 
-@media only screen and (max-width: 807px){
+@media only screen and (max-width: 845px){
     .hero{
         &_title{
-            font-size: 37px;
+            font-size: 41px;
             line-height: 49px;
         }
 
         &_desc{
             font-size: 10px;
+            line-height: 17px;
+            margin: 11px 0;
+        }
+
+        &--img_box{
+            width: 44%;
+        }
+
+        &--img_box::after{
+            width: 130px;
+            height: 130px;
+        }
+    }
+}
+
+@media only screen and (max-width: 807px){
+    .hero{
+        &_title{
+            font-size: 35px;
+            line-height: 45px;
+        }
+
+        &_desc{
+            font-size: 9px;
             line-height: 15px;
             margin: 13px 0;
         }
@@ -221,11 +224,68 @@
         }
 
         &--img_box::after{
-            width: 130px;
-            height: 130px;
+            width: 115px;
+            height: 115px;
         }
     }
 }
+
+@media only screen and (max-width: 780px){
+    .hero{
+        // &_content{
+        //     width: 32%;
+        // }
+
+        &_title{
+            font-size: 35px;
+            line-height: 45px;
+        }
+
+        &_desc{
+            font-size: 9px;
+            line-height: 15px;
+            margin: 13px 0;
+        }
+
+        &--img_box{
+            width: 43%;
+        }
+
+        &--img_box::after{
+            width: 105px;
+            height: 105px;
+        }
+    }
+}
+
+@media only screen and (max-width: 657px){
+    .hero{
+        &_content{
+            margin-left: 70px;
+        }
+
+        &_title{
+            font-size: 29px;
+            line-height: 35px;
+        }
+
+        &_desc{
+            font-size: 9px;
+            line-height: 12px;
+            margin: 11px 0;
+        }
+
+        &--img_box{
+            width: 43%;
+        }
+
+        &--img_box::after{
+            width: 105px;
+            height: 105px;
+        }
+    }
+}
+
 
 
 
