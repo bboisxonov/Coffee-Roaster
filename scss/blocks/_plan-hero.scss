@@ -4,7 +4,7 @@
     &--wrapper{
         display: flex;
         justify-content: space-between;
-        padding-top: 100px;
+        align-items: center;
     }
 
     &--content{
@@ -30,7 +30,6 @@
     }
 
     &--img_box{
-        margin-top: -7%;
         position: relative;
         width: 50%;
         height: 100%;
@@ -43,16 +42,16 @@
     &--img_box::after{
         content: "";
         position: absolute;
-        top: -15%;
-        left: -15%;
+        top: -13%;
+        left: -13%;
         background-image: url(/img/hero-after-img.png);
         background-size: cover;
-        width: 200px;
-        height: 200px;
+        width: 185px;
+        height: 185px;
     }
 }
 
-@media only screen and (max-width: 1304px){
+@media only screen and (max-width: 1389px){
     .plan_hero{
         &--content{
             width: 33%;
@@ -71,19 +70,19 @@
         }
 
         &--img_box::after{
-            width: 190px;
-            height: 190px;
+            width: 180px;
+            height: 180px;
         }
     }
 }
 
-@media only screen and (max-width: 1223px){
+@media only screen and (max-width: 1263px){
     .plan_hero{
         &--content{
             width: 34%;
         }
 
-        &--title{
+        &---title{
             font-size: 57px;
         }
 
@@ -96,13 +95,13 @@
         }
 
         &--img_box::after{
-            width: 180px;
-            height: 180px;
+            width: 170px;
+            height: 170px;
         }
     }
 }
 
-@media only screen and (max-width: 1127px){
+@media only screen and (max-width: 1165px){
     .plan_hero{
         &--content{
             width: 35%;
@@ -117,20 +116,21 @@
         }
 
         &--img_box::after{
-            width: 170px;
-            height: 170px;
+            width: 160px;
+            height: 160px;
         }
     }
 }
 
-@media only screen and (max-width: 1063px){
+@media only screen and (max-width: 1092px){
     .plan_hero{
         &--content{
             width: 37%;
         }
 
         &--title{
-            font-size: 53px;
+            font-size: 51px;
+            line-height: 55px;
         }
 
         &--desc{
@@ -142,51 +142,31 @@
         }
 
         &--img_box::after{
-            width: 160px;
-            height: 160px;
-        }
-    }
-}
-
-@media only screen and (max-width: 990px){
-    .plan_hero{
-        &--title{
-            font-size: 47px;
-            line-height: 55px;
-        }
-    }
-}
-
-@media only screen and (max-width: 876px){
-    .plan_hero{
-        &--title{
-            font-size: 45px;
-        }
-
-        &--desc{
-            font-size: 12px;
-        }
-
-        &--img_box{
-            width: 44%;
-        }
-
-        &--img_box::after{
             width: 150px;
             height: 150px;
         }
     }
 }
 
-@media only screen and (max-width: 809px){
+@media only screen and (max-width: 995px){
     .plan_hero{
         &--title{
-            font-size: 43px;
+            font-size: 45px;
+            line-height: 53px;
+        }
+    }
+}
+
+@media only screen and (max-width: 883px){
+    .plan_hero{
+        &--title{
+            font-size: 45px;
+            line-height: 50px;
         }
 
         &--desc{
             font-size: 11px;
-            line-height: 18px;
+            line-height: 19px;
             margin: 14px 0;
         }
 
@@ -195,8 +175,197 @@
         }
 
         &--img_box::after{
-            width: 140px;
-            height: 140px;
+            width: 135px;
+            height: 135px;
+        }
+    }
+}
+
+@media only screen and (max-width: 845px){
+    .plan_hero{
+        &--title{
+            font-size: 41px;
+            line-height: 49px;
+        }
+
+        &--desc{
+            font-size: 10px;
+            line-height: 17px;
+            margin: 11px 0;
+        }
+
+        &--img_box{
+            width: 44%;
+        }
+
+        &--img_box::after{
+            width: 130px;
+            height: 130px;
+        }
+    }
+}
+
+@media only screen and (max-width: 807px){
+    .plan_hero{
+        &--title{
+            font-size: 35px;
+            line-height: 45px;
+        }
+
+        &--desc{
+            font-size: 9px;
+            line-height: 15px;
+            margin: 13px 0;
+        }
+
+        &--img_box{
+            width: 43%;
+        }
+
+        &--img_box::after{
+            width: 115px;
+            height: 115px;
+        }
+    }
+}
+
+@media only screen and (max-width: 780px){
+    .plan_hero{
+        &--title{
+            font-size: 35px;
+            line-height: 45px;
+        }
+
+        &--desc{
+            font-size: 9px;
+            line-height: 15px;
+            margin: 13px 0;
+        }
+
+        &--img_box{
+            width: 43%;
+        }
+
+        &--img_box::after{
+            width: 105px;
+            height: 105px;
+        }
+    }
+}
+
+@media only screen and (max-width: 657px){
+    .plan_hero{
+        &--content{
+            margin-left: 75px;
+        }
+
+        &--title{
+            font-size: 29px;
+            line-height: 35px;
+        }
+
+        &--desc{
+            font-size: 9px;
+            line-height: 12px;
+            margin: 11px 0;
+        }
+
+        &--img_box{
+            width: 43%;
+        }
+
+        &--img_box::after{
+            width: 105px;
+            height: 105px;
+        }
+    }
+}
+
+@media only screen and (max-width: 631px){
+    .plan_hero{
+        &--wrapper{
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        &--content{
+            width: 80%;
+            align-items: center;
+            text-align: center;
+            margin: 10px 0 0 0;
+        }
+
+        &--title{
+            font-size: 35px;
+            line-height: 45px;
+        }
+
+        &--desc{
+            font-size: 13px;
+            line-height: 21px;
+            margin: 13px 0;
+        }
+
+        &--img_box{
+            width: 80%;
+        }
+
+        &--img{
+            border-radius: 20px;
+        }
+
+        &--img_box::after{
+        display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 590px){
+    .plan_hero{
+        &--title{
+            font-size: 33px;
+            line-height: 41px;
+        }
+
+        &--desc{
+            font-size: 11px;
+            line-height: 19px;
+            margin: 11px 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 557px){
+    .plan_hero{
+        &--title{
+            font-size: 30px;
+            line-height: 35px;
+        }
+    }
+}
+
+@media only screen and (max-width: 506px){
+    .plan_hero{
+        &--title{
+            font-size: 27px;
+            line-height: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 455px){
+    .plan_hero{
+        &--title{
+            font-size: 25px;
+            line-height: 27px;
+        }
+
+        &--desc{
+            font-size: 10px;
+            line-height: 17px;
+            margin: 10px 0;
         }
     }
 }
