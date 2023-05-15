@@ -61,3 +61,30 @@
         }
     }
 }
+@media only screen and (max-width: 570px) {
+    .about__feature-card__img1::after{
+        top: 8%;
+        right: 10%;
+        width: 80px;
+        height: 103px;
+    }
+    
+}
+@media only screen and (max-width: 570px) {
+    .about__feature-card__img2::after{
+        top: 8%;
+        right: 10%;
+        width: 80px;
+        height: 103px;
+    }
+    
+}
+@media only screen and (max-width: 570px) {
+    .about__feature-card__img3::after{
+        top: 8%;
+        right: 10%;
+        width: 80px;
+        height: 103px;
+    }
+    
+}
