@@ -1,7 +1,8 @@
 const elsPlanToggler = document.querySelectorAll('.plan-toggler');
-elsPlanToggler.forEach(function (elsPlanToggler) {
+elsPlanToggler.forEach((elsPlanToggler) => {
         elsPlanToggler.addEventListener('click', function () {
                 elsPlanToggler.nextElementSibling.classList.toggle('plan-card')
+                // elsPlanToggler.nextElementSibling.style.animation = 'openCard ' + 1 + "s"
             })
         })
         
