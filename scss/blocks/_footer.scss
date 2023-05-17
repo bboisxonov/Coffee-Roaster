@@ -5,18 +5,16 @@
     padding: 40px 0;
     &-list{
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        list-style: none;
         }
     &-link{
-        line-height: 19px;
-        font-weight: var(--font-weight-700);
-        text-align: center;
-        letter-spacing: 1px;
-        font-size: 16px;
-        text-transform: uppercase;
-        color: var(--text-color-primary);
         padding: 7px 20px;
+        color: var(--text-color-primary);
+        font-weight: var(--font-weight-700);
+        font-size: 16px;
+        line-height: 14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
         transition: .2s ease-in-out;
     }
     &-link:hover{
