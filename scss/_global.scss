@@ -18,17 +18,36 @@
     --text-color-white: #fff;
 }
 
+::selection{
+    color: #F3F3E8;
+    background-color: var(--text-color-primary);
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #C99B67;
+    border-radius: 20px;
+}
+
 .container{
     max-width: 1440px;
     margin: 0 auto;
     padding: 0;
 }
 
-body, html, h1, h2, h3, h4, h5, h6, p, div, span{
+body, html, h1, h2, h3, h4, h5, h6, p, div, span, a{
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+img{
+    user-select: none;
 }
 
 .button{
@@ -48,12 +67,6 @@ body, html, h1, h2, h3, h4, h5, h6, p, div, span{
 .button:hover{
     background-color: #075947;
     cursor: pointer;
-}
-
-a, ul, img{
-    text-decoration: none;
-    list-style: none;
-    user-select: none;
 }
 
 @media only screen and (max-width: 1389px){
@@ -78,32 +91,38 @@ a, ul, img{
 }
 
 @media only screen and (max-width: 845px){
-    .hero{
-       .button{
+    .button{
         padding: 9px 17px;
         font-size: 9px;
-       }
     }
 }
 
 @media only screen and (max-width: 631px){
-    .hero{
-       .button{
+    .button{
         width: 100%;
+        text-align: center;
         padding: 15px 21px;
         font-size: 13px;
         border-radius: 17px;
-       }
     }
 }
 
 @media only screen and (max-width: 506px){
-    .hero{
-       .button{
+    .button{
         width: 100%;
-        padding: 13px 19px;
+        text-align: center;
+        padding: 11px 15px;
         font-size: 11px;
         border-radius: 17px;
-       }
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .button{
+        width: 100%;
+        text-align: center;
+        padding: 10px 12px;
+        font-size: 10px;
+        border-radius: 17px;
     }
 }
