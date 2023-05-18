@@ -1,134 +1,147 @@
 @font-face {
-    font-family: 'Roboto', sans-serif;
-    src: url(/fonts/Roboto/Roboto-Regular.ttf);
-    src: url(/fonts/Roboto/Roboto-Regular.ttf);
-    src: url(/fonts/Roboto/Roboto-Bold.ttf);
+  font-family: "Roboto", sans-serif;
+  src: url(/fonts/Roboto/Roboto-Regular.ttf);
+  src: url(/fonts/Roboto/Roboto-Regular.ttf);
+  src: url(/fonts/Roboto/Roboto-Bold.ttf);
 }
 
-*,*::after,*::before{
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
-:root{
-    --primary-color: #0a775f;
-    --font-weight-400: 400;
-    --font-weight-500: 500;
-    --font-weight-700: 700;
-    --text-color-primary: #333333;
-    --text-color-white: #fff;
+:root {
+  --primary-color: #0a775f;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-700: 700;
+  --text-color-primary: #333333;
+  --text-color-white: #fff;
 }
 
-::selection{
-    color: #F3F3E8;
-    background-color: var(--text-color-primary);
+::selection {
+  color: #f3f3e8;
+  background-color: var(--text-color-primary);
 }
 
-::-webkit-scrollbar{
-    width: 5px;
+::-webkit-scrollbar {
+  width: 5px;
 }
 
-::-webkit-scrollbar-thumb{
-    background-color: #C99B67;
-    border-radius: 20px;
+::-webkit-scrollbar-thumb {
+  background-color: #c99b67;
+  border-radius: 20px;
 }
 
-.container{
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0;
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
 }
 
-body, html, h1, h2, h3, h4, h5, h6, p, div, span, a{
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    text-decoration: none;
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+span,
+a {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  text-decoration: none;
 }
 
-img{
-    user-select: none;
+img {
+  user-select: none;
 }
 
-.button{
-    width: fit-content;
-    color: var(--text-color-white);
-    background-color: var(--primary-color);
-    border-radius: 100px;
-    font-weight: var(--font-weight-500);
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 1px;
-    font-variant: all-small-caps;
-    padding: 16px 24px;
-    transition: all .2s ease-in-out;
+.button {
+  width: fit-content;
+  color: var(--text-color-white);
+  background-color: var(--primary-color);
+  border-radius: 100px;
+  font-weight: var(--font-weight-500);
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  font-variant: all-small-caps;
+  padding: 16px 24px;
+  transition: all 0.2s ease-in-out;
 }
 
-.button:hover{
-    background-color: #075947;
-    cursor: pointer;
+.button:hover {
+  background-color: #075947;
+  cursor: pointer;
 }
-.show{
-    display: block !important;
+.show {
+  display: block !important;
 }
-.hide{
-    display: none !important;
-}
-
-@media only screen and (max-width: 1389px){
-    .button{
-        padding: 15px 23px;
-        font-size: 13px;
-    }
+.hide {
+  display: none !important;
 }
 
-@media only screen and (max-width: 1092px){
-    .button{
-        padding: 13px 21px;
-        font-size: 13px;
-    }
+@media only screen and (max-width: 1389px) {
+  .button {
+    padding: 15px 23px;
+    font-size: 13px;
+  }
 }
 
-@media only screen and (max-width: 883px){
-    .button{
-        padding: 11px 19px;
-        font-size: 11px;
-    }
+@media only screen and (max-width: 1092px) {
+  .button {
+    padding: 13px 21px;
+    font-size: 13px;
+  }
 }
 
-@media only screen and (max-width: 845px){
-    .button{
-        padding: 9px 17px;
-        font-size: 9px;
-    }
+@media only screen and (max-width: 883px) {
+  .button {
+    padding: 11px 19px;
+    font-size: 11px;
+  }
 }
 
-@media only screen and (max-width: 631px){
-    .button{
-        width: 100%;
-        text-align: center;
-        padding: 15px 21px;
-        font-size: 13px;
-        border-radius: 17px;
-    }
+@media only screen and (max-width: 845px) {
+  .button {
+    padding: 9px 17px;
+    font-size: 9px;
+  }
 }
 
-@media only screen and (max-width: 506px){
-    .button{
-        width: 100%;
-        text-align: center;
-        padding: 11px 15px;
-        font-size: 11px;
-        border-radius: 17px;
-    }
+@media only screen and (max-width: 631px) {
+  .button {
+    width: 100%;
+    text-align: center;
+    padding: 15px 21px;
+    font-size: 13px;
+    border-radius: 17px;
+  }
 }
 
-@media only screen and (max-width: 400px){
-    .button{
-        width: 100%;
-        text-align: center;
-        padding: 10px 12px;
-        font-size: 10px;
-        border-radius: 17px;
-    }
+@media only screen and (max-width: 506px) {
+  .button {
+    width: 100%;
+    text-align: center;
+    padding: 11px 15px;
+    font-size: 11px;
+    border-radius: 17px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .button {
+    width: 100%;
+    text-align: center;
+    padding: 10px 12px;
+    font-size: 10px;
+    border-radius: 17px;
+  }
 }

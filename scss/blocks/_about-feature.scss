@@ -1,90 +1,84 @@
-.about__feature::after, .about__feature::before{
-    display: none;
+.about__feature::after,
+.about__feature::before {
+  display: none;
 }
 
-.about__feature-card::before, .about__feature::after{
-    display: none;
+.about__feature-card::before,
+.about__feature::after {
+  display: none;
 }
 
-.about__feature{
+.about__feature {
+  &-title {
+    margin: 0;
+    margin-bottom: 30px !important;
+  }
 
-    &-title{
-        margin: 0;
-        margin-bottom: 30px !important;
+  &-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+    position: relative;
+    &__title {
+      width: 33%;
     }
-
-    &-card{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        padding-bottom: 40px;
-        position: relative;
-        &__title{
-            width: 33%;
-        }
-        &__description{
-            width: 40%;
-        
-        }
-        &__img1::after{
-            content: "";
-            background: url(/img/about-feature-card1.png) no-repeat;
-            background-size: cover;
-            position: absolute;
-            top: 12%;
-            right: 15%;
-            width: 120px;
-            height: 143px;
-    
-        }
-        &__img2::after{
-            content: "";
-            background: url(/img/about-feature-card2.png) no-repeat;
-            background-size: cover;
-            position: absolute;
-            top: 12%;
-            right: 15%;
-            width: 120px;
-            height: 143px;
-    
-        }
-        &__img3::after{
-            content: "";
-            background: url(/img/about-feature-card3.png) no-repeat;
-            background-size: cover;
-            position: absolute;
-            top: 12%;
-            right: 15%;
-            width: 120px;
-            height: 143px;
-    
-        }
+    &__description {
+      width: 40%;
     }
+    &__img1::after {
+      content: "";
+      background: url(/img/about-feature-card1.png) no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 12%;
+      right: 15%;
+      width: 120px;
+      height: 143px;
+    }
+    &__img2::after {
+      content: "";
+      background: url(/img/about-feature-card2.png) no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 12%;
+      right: 15%;
+      width: 120px;
+      height: 143px;
+    }
+    &__img3::after {
+      content: "";
+      background: url(/img/about-feature-card3.png) no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 12%;
+      right: 15%;
+      width: 120px;
+      height: 143px;
+    }
+  }
 }
 @media only screen and (max-width: 570px) {
-    .about__feature-card__img1::after{
-        top: 8%;
-        right: 10%;
-        width: 80px;
-        height: 103px;
-    }
-    
+  .about__feature-card__img1::after {
+    top: 8%;
+    right: 10%;
+    width: 80px;
+    height: 103px;
+  }
 }
 @media only screen and (max-width: 570px) {
-    .about__feature-card__img2::after{
-        top: 8%;
-        right: 10%;
-        width: 80px;
-        height: 103px;
-    }
-    
+  .about__feature-card__img2::after {
+    top: 8%;
+    right: 10%;
+    width: 80px;
+    height: 103px;
+  }
 }
 @media only screen and (max-width: 570px) {
-    .about__feature-card__img3::after{
-        top: 8%;
-        right: 10%;
-        width: 80px;
-        height: 103px;
-    }
-    
+  .about__feature-card__img3::after {
+    top: 8%;
+    right: 10%;
+    width: 80px;
+    height: 103px;
+  }
 }
