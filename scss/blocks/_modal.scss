@@ -2,7 +2,11 @@
     width: 39%;
     height: 39%;
     margin: 0 auto;
-    position: relative;
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    z-index: 100;
+    display: none;
 
     &_wrapper{
         display: flex;
