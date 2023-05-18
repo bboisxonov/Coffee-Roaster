@@ -68,6 +68,12 @@ img{
     background-color: #075947;
     cursor: pointer;
 }
+.show{
+    display: block !important;
+}
+.hide{
+    display: none !important;
+}
 
 @media only screen and (max-width: 1389px){
     .button{

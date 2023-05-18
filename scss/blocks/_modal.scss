@@ -1,14 +1,21 @@
 .modal{
-    width: 39%;
-    height: 39%;
-    margin: 0 auto;
-    position: relative;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #0000007c;
+    display: none;
 
     &_wrapper{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        margin: auto;
+        width: 30%;
+    }
+    &_content{
+        position: absolute;
+        top: 10%;
+        width: 30%;
     }
 
     &_title--wrapper{
