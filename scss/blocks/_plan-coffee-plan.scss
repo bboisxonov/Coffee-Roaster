@@ -84,7 +84,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        position: relative;
     }
 
     &--card{
@@ -166,23 +165,16 @@
     overflow: hidden;
 }
 
-@keyframes openCard {
-    0%{
-        position: relative;
-        top: 0%;
-        width: 100%;
-        height: 0;
+// @keyframes openCard {
+//     0%{
+//         width: 100%;
+//         height: 0px;
         
-    }
-    100%{
-        // position: relative;
-        // top: 0%;
-        width: 100%;
-        height: 100%;
-    }
-}
-
-// @keyframes closeCard {
+//     }
+//     100%{
+//         width: 100%;
+//         height: 100%;
+//     }
 // }
 
 .current{
